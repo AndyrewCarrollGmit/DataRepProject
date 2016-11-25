@@ -1,18 +1,69 @@
-<title>Single-Wep-App</title>
-  <meta charset="utf-8">
+ <title>Single-Wep-App</title>
+<body>
+ <!--https://github.com/jmoswalt/passwordgen/blob/master/templates/index.html - Used to help with Html and Python integration -->
+
+ <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- BootStrap Theme-->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}"/>
+
+  <style>
+body    {
+
+            background-color: white;
+
+        }
+.jumbotron
+        {
+           background-color: black;
+           color: #fff;
+           position: relative;
+        }
+
+  </style>
 
 
 
-</head>
+    <div class="jumbotron  text-center">
+
+      <h1>Password Generator</h1>
+        
+        <h3>Use this Web-Application to generate a secure & random password.</h3>
+        </div>
+
+      <div class="text-center"> <h2>{{passwordGen}}</h2>
 
 
-<div class="text-center">
-  <h1>Password Generator</h1>
 
-     <h2>{{passwordGen}}</h2>
-        <form method="POST" action="/">
-          <button type="submit" class="btn btn-danger">Click To Generate Password</button>
-        </form>
+          <form method="POST" action="/">
+            <p>Choose Password Length</p>
+              <select name="y" value="{{ y }}">
+        {% for amount in pass %}
+          <option{% if amount == y %} selected="selected"{% endif %}>{{ amount }}</option>
+        {% endfor %}
+      </select>
+          <br><br>
+                <button type="submit" class="btn btn-danger btn-lg">Generate Password</button>
+           <p class="center" id="showtext">You must manually press CTRL+C to Copy Password</p>
+          </form>
 
-    </div>
+     <form>
+        <p class="text">
+        <textarea name="text" class="" id="comment" placeholder="Give Your Feedback"></textarea>
+      </p>
+
+
+     Email Address:
+    <input type="text" name="emailAddress" value="">
+    <br><br>
+     <button type="submit" class="btn btn-primary btn-lg">Submit Email-Address</button>
+
+</form>
+
+      </div>
+
+
+
+ </body>
+ </head>

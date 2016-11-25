@@ -1,23 +1,34 @@
+from flask import Flask, request,render_template
 import random
 import string
-from flask import Flask
+
 
 app = Flask(__name__)
 
-#Function with value of 10
-def generatePassword(x = 10):
+
+#Function with parameter x value of 10
+def randomisePassword(y = 10):
     #concatenate Ascii letters and Numbers
-    return ''.join(random.sample( string.ascii_letters + string.digits) for x in range(int(x)))
+    return ''.join(random.choice( string.ascii_letters + string.digits) for x in range(int(y)))
+
+
 #Get Data From index.html
 @app.route('/', methods=['GET', 'POST'])
 
-#Generate Password And Post From Index Page
-def passGen():
-    x = request.form.get('x')
-    createPassword = generatePassword()
-    generate = {'passwordGen': createPassword, '': x}
+
+#https://github.com/jmoswalt/passwordgen/blob/master/app.py --> used to help with function of generator
+#Generate Password And Post From HTML Page
+def generatePassword():
+    y = request.form.get('y') or '10'
+    createPassword = randomisePassword(y)
+    passwordLength = [str(x) for x in range(7, 15)]
+    generate = {'passwordGen': createPassword,'y': y, 'pass': passwordLength}
     return render_template('index.html', **generate)
 
 
 if __name__ == "__main__":
     app.run()
+
+
+
+
