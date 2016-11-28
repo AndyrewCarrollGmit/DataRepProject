@@ -8,7 +8,11 @@
            documentation explaining how the application works, and write a short user
            guide for it 
 <h4> What Is The Application </h4>          
-<p> For my Project I decdided to create a password generator. The application asks a user to choose the length of he/shes password with a drop-down menu & incorporates both lower and uppercase letters with numbers, allowing for a more powerful and less hackable password. The User can give feedback and submit with their email address which will then be stored in an SQLite Database <p>  
+<p> For my Project I decided to create a <b>password generator</b>. The application asks a user to choose the length of he/shes password with a drop-down menu & incorporates both lower and uppercase letters with numbers, allowing for a more powerful and less hackable password. The User can give feedback and submit the feedback using their email address which will then be stored in an SQLite Database <p>  
+<h4> Where the application was created: </h4>
+<p> The Project was written in the program PyCharm,  an Integrated Development Environment (IDE) used in computer programming, specifically for the Python language<p>
+           
+               Downloaded From: https://www.jetbrains.com/pycharm/
 
 
 
