@@ -1,12 +1,14 @@
 #Singe Page Web-Application
 <h3> Python-Flask Project 2016 </h3>
-<p> This Repository contains code written in the programming language Python and the markup langauge HTML for a third year project in the module <b> Data Representation and Querying <p> 
+<p> This Repository contains code written in the programming language Python and the markup langauge HTML for a third year project in the module <b> Data Representation and Querying</b> <p> 
 <h4> The Project Brief: </h4>
-          You are required to develop a single-page web application (SPA) written
+           You are required to develop a single-page web application (SPA) written
            in the programming language Python  using the Flask framework.
            You must devise an idea for a web application, write the software, write
            documentation explaining how the application works, and write a short user
            guide for it 
-          
-<p> For my Project I decdided to create a password generator. The application allows a user to choose the length of he/shes password themselves incorpoating both lower and uppercase letters with numbers, allowing for a more powerful and less hackable password <p>  
+<h4> What Is The Application </h4>          
+<p> For my Project I decdided to create a password generator. The application asks a user to choose the length of he/shes password with a drop-down menu & incorporates both lower and uppercase letters with numbers, allowing for a more powerful and less hackable password. The User can give feedback and submit with their email address which will then be stored in an SQLite Database <p>  
+
+
 
