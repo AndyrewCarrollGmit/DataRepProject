@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--http://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_overlay - Used for the Menu & Styling -->
+
+     <title>Feedback</title>
+    <meta charset="UTF-8">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}"/>
+
+  <style>
+.jumbotron
+        {
+           background-color: black;
+           color: #fff;
+           position: relative;
+        }
+
+  </style>
+
+</head>
+
+<body>
+
+    <div class="jumbotron  text-center">
+
+    <div id="myNav" class="overlay">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <div class="overlay-content">
+          <a href="/index" id="home">Home-Page</a>
+        <a href="/feedback">Feedback</a>
+       </div>
+    </div>
+
+            <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; Open Menu</span>
+            <h1>Password Generator</h1>
+
+        <h3>Please Feel Free To Give Your Feedback</h3>
+
+     </div>
+
+
+        <div class="text-center">
+              <form method="POST" action="/feedback">
+                <p class="text">
+                     <textarea name="text" class="" id="comment" placeholder="Give Your Feedback"></textarea>
+                          </p>
+
+         Email Address:
+                <input type="text" name="emailAddress" value="{{ emails }}">
+             <br><br>
+         <button type="submit" class="btn btn-primary btn-lg">Submit Feedback</button>
+
+              </form>
+        </div>
+
+    <script>
+
+         $("#home").click(function (e){
+
+            e.preventDefault();
+            window.location = "/index";
+
+        });
+
+        function openNav() {
+            document.getElementById("myNav").style.width = "30%";
+        }
+
+        function closeNav() {
+            document.getElementById("myNav").style.width = "0%";
+        }
+    </script>
+
+</body>
+</html>

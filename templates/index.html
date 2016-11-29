@@ -1,14 +1,19 @@
- <title>Single-Wep-App</title>
-<body>
+<!DOCTYPE html>
+<html lang="en">
  <!--https://github.com/jmoswalt/passwordgen/blob/master/templates/index.html - Used to help with Html and Python integration -->
 
- <meta charset="utf-8">
+ <!--http://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_overlay - Used for the Menu & Styling -->
+
+<title>Single-Wep-App</title>
+<meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- BootStrap Theme-->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}"/>
+<head>
 
-  <style>
+
+ <style>
 .jumbotron
         {
            background-color: black;
@@ -18,14 +23,25 @@
 
   </style>
 
+</head>
 
 
-    <div class="jumbotron  text-center">
+<body>
+ <div class="jumbotron  text-center">
 
+        <div id="myNav" class="overlay">
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+          <div class="overlay-content">
+              <a href="/index" id="Home">Home-Page</a>
+            <a href="/feedback" id="feedback">Feedback</a>
+           </div>
+        </div>
+
+<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; Open Menu</span>
       <h1>Password Generator</h1>
         
         <h3>Use this Web-Application to generate a secure & random password.</h3>
-        </div>
+    </div>
 
       <div class="text-center"> <h2>{{passwordGen}}</h2>
 
@@ -38,27 +54,38 @@
           <option{% if amount == y %} selected="selected"{% endif %}>{{ amount }}</option>
         {% endfor %}
       </select>
-          <br><br>
+          <br><br><br>
                 <button type="submit" class="btn btn-danger btn-lg">Generate Password</button>
+          <br><br>
            <p class="center" id="showtext">You must manually press CTRL+C to Copy Password</p>
           </form>
 
-     <form>
-        <p class="text">
-        <textarea name="text" class="" id="comment" placeholder="Give Your Feedback"></textarea>
-      </p>
-
-
-     Email Address:
-    <input type="text" name="emailAddress" value="{{ email }}">
-    <br><br>
-     <button type="submit" class="btn btn-primary btn-lg">Submit Email-Address</button>
-
-    </form>
-
       </div>
 
+<script>
+    $("#feedback").click(function (e){
+
+            e.preventDefault();
+            window.location = "/feedback";
+
+        });
+     $("#home").click(function (e){
+
+            e.preventDefault();
+            window.location = "/index";
+
+        });
+
+function openNav() {
+    document.getElementById("myNav").style.width = "30%";
+}
+
+function closeNav() {
+    document.getElementById("myNav").style.width = "0%";
+}
+</script>
 
 
  </body>
- </head>
+
+</html>
