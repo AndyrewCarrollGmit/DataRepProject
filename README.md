@@ -19,22 +19,22 @@
  <h3><b> What Is The Application </b> </h3>          
 <p> For my Project I decided to create a <b>password generator</b>. The application asks a user to choose the length of he/shes password with a drop-down menu & incorporates both lower and uppercase letters with numbers, allowing for a more powerful and less hackable password. The User can give feedback and submit the feedback using their email address which will then be stored in an SQLite Database <p>  
 
-<h3>><b> Where the Application was created </b></h3>
+<h3><b> Where the Application was created </b></h3>
 <p> The Project was written in the program PyCharm, an Integrated Development Environment (IDE) used in computer programming, specifically for the Python language here i wrote my python and html code along with the css and javascript,  and when running the python project I used the Console Emulator <b>cmder</b> <p>
            
      Both of Which Downloaded From: https://www.jetbrains.com/pycharm/
                                     http://cmder.net/
 <p> In order to get flask working with pycharm an extension was downloaded inside the program, New Boston Tutorials on youtube has a video showing how to set this up <p>
-                       https://www.youtube.com/watch?v=ZVGwqnjOKjk
+                                  https://www.youtube.com/watch?v=ZVGwqnjOKjk
 
 <h3><b> How to Run the Application</b> </h3>
 <p>When Running the project make sure  you direct the cmder to the right directory <p>
            There you will be able to run the application with the following command :
-           py DataRepProject.py 
+                                  py DataRepProject.py 
            
            
 <p>Once the Application is running you will be given a url to run in your browser:<p>
-                      http://127.0.0.1:5000/
+                                  http://127.0.0.1:5000/
 
 <h3><b> References</b> </h3>
  <p> Throughout the project period  I used different tutorials and material online to help with the making of my project along with github repositories created by our Lecturer <p>
