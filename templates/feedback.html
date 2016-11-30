@@ -24,6 +24,7 @@
 
     <div class="jumbotron  text-center">
 
+
     <div id="myNav" class="overlay">
       <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
       <div class="overlay-content">
@@ -39,34 +40,46 @@
 
      </div>
 
-
+        <!-- Feedback textarea to allow user to enter there opinion -->
         <div class="text-center">
-              <form method="POST" action="/feedback">
+              <form>
                 <p class="text">
                      <textarea name="text" class="" id="comment" placeholder="Give Your Feedback"></textarea>
                           </p>
 
-         Email Address:
-                <input type="text" name="emailAddress" value="{{ emails }}">
+                 <!-- User Can Enter Email Address -->
+                <input type="text" name="emailAddress" placeholder="Enter Email Address Here" id="{{ emailAddress }}">
              <br><br>
-         <button type="submit" class="btn btn-primary btn-lg">Submit Feedback</button>
+
+                  <!-- Submission Button -->
+         <button type="submit" class="btn btn-primary btn-lg" id="submit">Submit Feedback</button>
 
               </form>
         </div>
 
+
+
     <script>
 
+            // Navigate to homepage using javascript
          $("#home").click(function (e){
 
             e.preventDefault();
             window.location = "/index";
 
         });
+            $("#feedback").click(function (e){
 
+            e.preventDefault();
+            window.location = "/feedback";
+
+        });
+
+        // Function to open Menu and Sets the Menu Width
         function openNav() {
             document.getElementById("myNav").style.width = "30%";
         }
-
+        // Function to Close Menu and Sets the Menu Width --> http://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_overlay
         function closeNav() {
             document.getElementById("myNav").style.width = "0%";
         }

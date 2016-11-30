@@ -2,7 +2,7 @@
 <html lang="en">
  <!--https://github.com/jmoswalt/passwordgen/blob/master/templates/index.html - Used to help with Html and Python integration -->
 
- <!--http://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_overlay - Used for the Menu & Styling -->
+ <!--http://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_overlay - Used for the Menu Styling and Navigation -->
 
 <title>Single-Wep-App</title>
 <meta charset="utf-8">
@@ -27,6 +27,7 @@
 
 
 <body>
+<!-- Display Password And allow USer to Click Generate -->
  <div class="jumbotron  text-center">
 
         <div id="myNav" class="overlay">
@@ -49,13 +50,14 @@
 
           <form method="POST" action="/">
             <p>Choose Password Length</p>
-              <select name="y" value="{{ y }}">
+              <select name="y" >
         {% for amount in pass %}
           <option{% if amount == y %} selected="selected"{% endif %}>{{ amount }}</option>
         {% endfor %}
       </select>
           <br><br><br>
-                <button type="submit" class="btn btn-danger btn-lg">Generate Password</button>
+           <!-- Generate Password Button -->
+           <button type="submit" class="btn btn-danger btn-lg">Generate Password</button>
           <br><br>
            <p class="center" id="showtext">You must manually press CTRL+C to Copy Password</p>
           </form>
@@ -63,12 +65,14 @@
       </div>
 
 <script>
+   // Navigate to feedback page using javascript
     $("#feedback").click(function (e){
 
             e.preventDefault();
             window.location = "/feedback";
 
         });
+    // Navigate to homepage  using javascript
      $("#home").click(function (e){
 
             e.preventDefault();
@@ -76,13 +80,14 @@
 
         });
 
-function openNav() {
-    document.getElementById("myNav").style.width = "30%";
-}
-
-function closeNav() {
-    document.getElementById("myNav").style.width = "0%";
-}
+    // Function to open Menu and Sets the Menu Width
+        function openNav() {
+            document.getElementById("myNav").style.width = "30%";
+        }
+         // Function to Close Menu and Sets the Menu Width
+        function closeNav() {
+            document.getElementById("myNav").style.width = "0%";
+        }
 </script>
 
 
