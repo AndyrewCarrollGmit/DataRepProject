@@ -10,9 +10,10 @@
 <h4> What Is The Application </h4>          
 <p> For my Project I decided to create a <b>password generator</b>. The application asks a user to choose the length of he/shes password with a drop-down menu & incorporates both lower and uppercase letters with numbers, allowing for a more powerful and less hackable password. The User can give feedback and submit the feedback using their email address which will then be stored in an SQLite Database <p>  
 <h4> Where the Application was created: </h4>
-<p> The Project was written in the program PyCharm,  an Integrated Development Environment (IDE) used in computer programming, specifically for the Python language<p>
+<p> The Project was written in the program PyCharm, an Integrated Development Environment (IDE) used in computer programming, specifically for the Python language, and when running the python project I used the Console Emulator <b>cmder</b> <p>
            
-     Downloaded From: https://www.jetbrains.com/pycharm/
+     Both of Which Downloaded From: https://www.jetbrains.com/pycharm/
+                                    http://cmder.net/
 
 
 
