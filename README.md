@@ -38,12 +38,12 @@
 
 <h3><b> References</b> </h3>
  <p> Throughout the project period  I used different tutorials and material online to help with the making of my project along with github repositories created by our Lecturer <p>
-            - https://github.com/jmoswalt/passwordgen
-            - https://github.com/data-representation/example-sqlite
-            - http://www.w3schools.com
-            - https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css
-            - http://stackoverflow.com/questions/8970600/how-to-navigate-to-a-different-page-with-javascript
-            -http://flask.pocoo.org/docs/0.11/tutorial/dbcon/
+- https://github.com/jmoswalt/passwordgen
+- https://github.com/data-representation/example-sqlite
+- http://www.w3schools.com
+- https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css
+- http://stackoverflow.com/questions/8970600/how-to-navigate-to-a-different-page-with-javascript
+-http://flask.pocoo.org/docs/0.11/tutorial/dbcon/
  
  <h3><b> Conclusion</b> </h3>
   <p> Looking Back On the project theres a few things that I would have changed and done alot better, for example when it comes to sending feedback to the database for SQLite it is not fully working, I looked at different database softwares such as CouchDB but I found that there was alot more material on SQLite so decided to work with that for my project, Overall I am happy with  my application and believe it is very user friendly to use with little and basic options in order to complete the task at hand.<p>   
