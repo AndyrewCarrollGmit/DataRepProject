@@ -8,18 +8,18 @@
            documentation explaining how the application works, and write a short user
            guide for it 
            
-           <h4><b> Picking The Project </b> </h4>
+<h3><b> Picking The Project </b> </h3>
 <p> The first few weeks were spent researching up on flask and python and different projects that have been created using them,during my  research  I narrowed my rearch down to 3 <p>
            
            1.Password Generator
            2.Grades Calulator
            3.Bit-Coin Converter
- <p> In the end I decided on the <b> password generator <b> As I found some great and helpful tutorials online <p>            
+ <p> In the end I decided on the <b> password generator </b> As I found some great and helpful tutorials online <p>            
            
-           <h4><b> What Is The Application </b> </h4>          
+ <h3><b> What Is The Application </b> </h3>          
 <p> For my Project I decided to create a <b>password generator</b>. The application asks a user to choose the length of he/shes password with a drop-down menu & incorporates both lower and uppercase letters with numbers, allowing for a more powerful and less hackable password. The User can give feedback and submit the feedback using their email address which will then be stored in an SQLite Database <p>  
 
-<h4><b> Where the Application was created </b></h4>
+<h3>><b> Where the Application was created </b></h3>
 <p> The Project was written in the program PyCharm, an Integrated Development Environment (IDE) used in computer programming, specifically for the Python language here i wrote my python and html code along with the css and javascript,  and when running the python project I used the Console Emulator <b>cmder</b> <p>
            
      Both of Which Downloaded From: https://www.jetbrains.com/pycharm/
@@ -27,7 +27,7 @@
 <p> In order to get flask working with pycharm an extension was downloaded inside the program, New Boston Tutorials on youtube has a video showing how to set this up <p>
                        https://www.youtube.com/watch?v=ZVGwqnjOKjk
 
-<h4> How to Run the Application </h4>
+<h3><b> How to Run the Application</b> </h3>
 <p>When Running the project make sure  you direct the cmder to the right directory <p>
            There you will be able to run the application with the following command :
            py DataRepProject.py 
