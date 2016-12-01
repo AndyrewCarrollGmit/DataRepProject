@@ -12,7 +12,7 @@
 <p> The first few weeks were spent researching up on flask and python and different projects that have been created using them,during my  research  I narrowed my rearch down to 3 <p>
            
            1.Password Generator
-           2.Grades Calulator
+           2.Grades Calculator
            3.Bit-Coin Converter
  <p> In the end I decided on the <b> password generator </b> As I found some great and helpful tutorials online <p>            
            
