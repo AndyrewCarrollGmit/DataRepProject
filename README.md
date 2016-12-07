@@ -40,7 +40,7 @@
  <p> Throughout the project period  I used different tutorials and material online to help with the making of my project along with github repositories created by our Lecturer <p>
 - https://github.com/jmoswalt/passwordgen
 - https://github.com/data-representation/example-sqlite
-- http://www.w3schools.com
+- http://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_overlay
 - https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css
 - http://stackoverflow.com/questions/8970600/how-to-navigate-to-a-different-page-with-javascript
 -http://flask.pocoo.org/docs/0.11/tutorial/dbcon/
