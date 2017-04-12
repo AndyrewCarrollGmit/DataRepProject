@@ -25,7 +25,7 @@
      Both of Which Downloaded From: https://www.jetbrains.com/pycharm/
                                     http://cmder.net/
 <p> In order to get flask working with pycharm an extension was downloaded inside the program, New Boston Tutorials on youtube has a video showing how to set this up <p>
-                                  https://www.youtube.com/watch?v=ZVGwqnjOKjk
+                                  https://www.youtube.com/watch?v=ZVGwqnjOKjk 
 
 <h3><b> How to Run the Application</b> </h3>
 <p>When Running the project make sure  you direct the cmder to the right directory <p>
